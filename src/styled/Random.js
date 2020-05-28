@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const Accent = styled.span`
   color: #e16365;
+  font-style: italic;
+`;
+
+export const Accent2 = styled.span`
+  color: #3333ff;
+  font-size: 1.8rem;
 `;
 
 export const StyledTitle = styled.h1`

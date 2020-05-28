@@ -13,7 +13,7 @@ export default function Navbar() {
     <StyledNavbar>
       <StyledNavBrand className="nav__brand">
         <Link to="/">
-          Type.With.<Accent>React.</Accent>
+          Type.With <Accent>React</Accent>
         </Link>
       </StyledNavBrand>
       <StyledNavItems>
