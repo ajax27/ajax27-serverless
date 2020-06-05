@@ -6,17 +6,19 @@ import {
   StyledTimer,
 } from "../styled/Game";
 import { Strong } from "../styled/Random";
+import { useScore } from "../contexts/ScoreContext";
 
 export default function Game({ history }) {
-  const [score, setScore] = useState(1);
-  const MAX_SECONDS = 80;
-  const [ms, setMs] = useState(999);
+  const [score, setScore] = useScore(0);
+  const MAX_SECONDS = 10;
+  const [ms, setMs] = useState(0);
   const [seconds, setSeconds] = useState(MAX_SECONDS);
   const [currentCharacter, setCurrentCharacter] = useState("");
   const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
 
   useEffect(() => {
     setRandomCharacter();
+    setScore(0);
     const currentTime = new Date();
     const interval = setInterval(() => updateTime(currentTime), 1);
     return () => {
@@ -52,6 +54,7 @@ export default function Game({ history }) {
 
   useEffect(() => {
     if (seconds <= -1) {
+      // todo: save the score
       history.push("/gameOver");
     }
   }, [seconds, ms, history]);
