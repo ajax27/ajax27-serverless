@@ -22,6 +22,11 @@ export const StyledCharacter = styled.p`
   color: #e16365;
 `;
 
+export const StyledMessage = styled.h3`
+  margin-top: 30px;
+  color: #ff6666;
+`;
+
 export const StyledScore = styled.p`
   font-size: 1.5rem;
 `;

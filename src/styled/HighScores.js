@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const ScoresList = styled.ol`
-  padding-left: 24px;
-  ${'' /* list-style: none; */}
+  padding-left: 140px;
+  margin-left: 80px;
+  list-style: none;
   padding-bottom: 5px;
+  text-align: left;
 `;
 
 export const ScoreLi = styled.li`
