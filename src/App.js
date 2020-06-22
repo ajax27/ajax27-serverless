@@ -9,8 +9,13 @@ import Navbar from "./components/Navbar";
 import { GlobalStyle } from "./styled/Global";
 import { Container } from "./styled/Container";
 import { Main } from "./styled/Main";
+import { useAuth0 } from './auth';
 
 function App() {
+  const { loading } = useAuth0();
+  if (loading) {
+    return <p>Loading...</p>;
+  }
   return (
     <Router>
       <GlobalStyle />
