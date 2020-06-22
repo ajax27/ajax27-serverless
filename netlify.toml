@@ -2,3 +2,4 @@
   publish = "/build"
   command = "npm run build"
   functions = "/functions"
+  ignore = "git diff --quiet HEAD^ HEAD sub_dir/"
