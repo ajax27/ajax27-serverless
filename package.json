@@ -1,5 +1,6 @@
 {
   "name": "ajax27-serverless",
+  "homepage": "https://eloquent-tesla-6c3265.netlify.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
