@@ -6,10 +6,9 @@ import { useAuth0 } from '../auth';
 
 export default function Home() {
   const { user } = useAuth0();
-  console.log(user);
   return (
     <div>
-    <h2>Welcome {}</h2>
+    <h2>Welcome</h2>
       <StyledTitle>Ready to type?</StyledTitle>
       <CTA to="/game">
         Click or Type '<Accent2>s</Accent2>' to start playing
